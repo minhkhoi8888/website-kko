@@ -926,7 +926,7 @@ body {
 }
 
 .transXContain div,
-.transXContain div a{
+.transXContain a{
     color: rgb(230, 220, 220);
     text-decoration: none;
     display: flex;
