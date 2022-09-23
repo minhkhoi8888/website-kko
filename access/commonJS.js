@@ -1,3 +1,4 @@
+// word rotation
 setInterval(function () {
     const show = document.querySelector('span[data-show]');
     const next = show.nextElementSibling || document.querySelector('.show-off__mask span:first-child');
@@ -13,4 +14,13 @@ setInterval(function () {
     next.setAttribute('data-show', '');
 }, 2000);
 
-// 
+var btnUpdate = document.querySelector("#update");
+var btnCancel = document.querySelector("#cancel");
+var modal = document.querySelector(".modal")
+btnCancel.addEventListener("click", ()=>{
+  modal.classList.add('modal-close');
+})
+
+btnUpdate.addEventListener("click", ()=>{
+  modal.classList.add('modal-close');
+})

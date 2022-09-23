@@ -4,33 +4,22 @@ wrapSlides = document.querySelector('.home-slider'),
 indexSlide = 0,
 mapSlide = document.querySelectorAll('.home-slider-map-item'),
 slideWidth = slides = wrapSlides.querySelectorAll('.home-slider__item')[0].offsetWidth,
-slidesLength = mapSlide.lengt
-checkIndex = 0;
+slidesLength = mapSlide.length;
 
+// Slider 
 mapSlide[0].style.opacity = "1";
 mapSlide.forEach((item, index) =>{
     item.onclick = () =>{
-        if (indexSlide < index){
-            wrapSlides.style.left = -slideWidth*index + 'px';
-            checkIndex++;
-            indexSlide = index;
-            mapSlide.forEach((item) =>{
-                item.style.opacity = "0.5";
-            })
-            mapSlide[index].style.opacity = "1";
-        } else if(indexSlide > index){
-            wrapSlides.style.left = -slideWidth*index + 'px';
-            checkIndex--;
-            indexSlide = index;
-            mapSlide.forEach((item) =>{
-                item.style.opacity = "0.5";
-            })
-            mapSlide[index].style.opacity = "1";
-        }
+        wrapSlides.style.left = -slideWidth*index + 'px';
+        indexSlide = index;
+        mapSlide.forEach((item) =>{
+            item.style.opacity = "0.5";
+        })
+        mapSlide[index].style.opacity = "1";
     }
 })
 
-
+// Content slide
 const infoList = {
     0: {
         name: "FORZA HORIZON",
@@ -54,7 +43,7 @@ const infoList = {
     }
 };
 
-// add info
+// Infor Slide
 hoverInfo.forEach((item, index)=>{
     item.innerHTML = `<h3>${infoList[index].name}</h3>
     <p>${infoList[index].description}</p>
@@ -78,7 +67,7 @@ wrapSlides.addEventListener('mouseout', function (){
 });
 
 
-// Scroll Header
+// Scroll Header Animation
 var headerNav = document.querySelector('.menu');
 window.onscroll = function (){
     if(this.scrollY > 20){
@@ -154,7 +143,7 @@ document.querySelectorAll('.news-bookmark').forEach((item)=>{
 });
 
 
-// Loading loadmore
+// Loading loadMore button
 var btnLoadMore = document.querySelectorAll('.load-more');
 btnLoadMore.forEach((item)=>{
     item.onclick = ()=>{

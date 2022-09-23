@@ -1,0 +1,199 @@
+/* CONTACT */
+
+input[type=text], select, textarea, input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(163, 162, 162);
+    border-radius: 10px;
+    /* box-sizing: border-box; */
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+input[type=submit] {
+    background-color: #5a4cd8;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+#contact{
+    position: relative;
+    top: 780px;
+    margin-bottom: 1100px;
+    padding: 26px;
+
+}
+
+.contact-content {
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+    width: 1200px;
+    box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    padding: 26px;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,0.1);
+	background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+  	-webkit-backdrop-filter: blur(5px);
+    background: url("https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80") 10% no-repeat;
+    background-size: 110%;
+}
+
+.contact-form{
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 20px;
+    width: 55%;
+    height: 100%;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+  	-webkit-backdrop-filter: blur(5px);
+}
+
+.contact-form div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form div div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form div div:first-child{
+    margin-right: 24px;
+}
+
+.contact-decoration{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-decoration h2{
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.contact-decoration img{
+    height: 250px;
+    width: 80%;
+    transform: scale(1);
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0.9;
+    animation: shake 0.6s infinite;
+
+}
+
+.contact-decoration div h3{
+    font-size: 18px;
+    color: #202020;
+    margin-top: 28px;
+}
+
+.contact-decoration div div{
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-decoration div div i{
+    font-size: 46px;
+    color:#191919;
+    transition: all 0.3s;
+}
+
+.contact-decoration div div i:hover{
+    color:#363434;
+    animation: shake 2.8s ease infinite;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -1px) rotate(-1deg); }
+    20% { transform: translate(-1px, 0px) rotate(1deg); }
+    30% { transform: translate(1px, 1px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 1px) rotate(-1deg); }
+    60% { transform: translate(-1px, 1px) rotate(0deg); }
+    70% { transform: translate(1px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 1px) rotate(0deg); }
+    100% { transform: translate(1px, -1px) rotate(-1deg); }
+}
+
+/* FOOTER */
+
+.footer{
+    position: relative;
+    width: 100%;
+    height: 230px;
+    background-color:#6e99b3;
+    padding-top: 26px;
+}
+
+.footer-content{
+    width: 1200px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content__item h3{
+    color: rgb(4, 28, 50);
+    margin-bottom: 20px;
+    user-select: none;
+    font-size: 20px;
+
+}
+
+.footer-content__item p{
+    color: rgb(26, 55, 77);
+    padding-bottom: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.1s;
+    user-select: none;
+}
+
+.footer-content__item p:hover{
+    transform: translateY(-1px);
+    color: rgb(6, 31, 43);
+}
+
+.footer-last{
+    background-color: rgb(177, 208, 224);
+    position: absolute;
+    bottom: 0;
+    height: 25px;
+    width: 100%;
+}
+
+
+.footer-copy-right p{
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    user-select: none;
+}

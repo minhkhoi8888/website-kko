@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+#admin{
+    display: flex;
+}
+ 
+.nav{
+    height: 100vh;
+    width: 30%;
+    background-color: rgb(114, 182, 234);
+}
+
+.nav-header{
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    margin-left: 56px;
+}
+
+.nav-header img{
+    width: 60px;
+    margin-right: 12px;
+}
+
+.nav-list{
+    margin-top: 50px;
+}
+
+.nav-list__item{
+    height: 60px;
+    text-transform: uppercase;
+    padding: 26px 0 0 46px;
+    cursor: pointer;
+}
+
+.nav-list__item i{
+    padding: 20px;
+}
+.nav-list__item span{
+    height: 100%;
+}
+
+.active {
+    background-color: white;
+    border-radius: 30px 0 0 30px;
+}
+
+/* CONTENT */
+.content{
+    flex: 1;
+    height: 100vh;
+}
+
+.content-header{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.content-header__profile{
+    display: flex;
+}
+.content-header__profile i{
+    margin-right: 8px;
+    padding: 8px 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+    color: white;
+    background-color: black; 
+}
+
+.content-header__title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.content-container{
+    background-color: rgb(244, 245, 248);
+    padding: 20px 20px 0;
+    border-radius: 30px 30px 0 0;
+}
+
+/* BOX */
+.content-container__box{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 30px;
+}
+.content-container__box--item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    min-width: 220px ;
+    background-color: rgb(24, 168, 201);
+    border-radius: 30px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+.content-container__box--item i {
+    font-size: 28px;
+    margin-left: 32px;
+}
+
+/* Table */
+.content-container__table{
+    background-color: bisque;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 80px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+.content-container__table--header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+}
+.content-container__table--header p{
+    background-color: rgb(90, 164, 102);
+    border-radius: 30px;
+    padding: 10px;
+}
+
+table{
+    width: 100%;
+    text-align: left;
+}
+
+td, th{
+    padding: 14px 0;
+}
+
+td i {
+    background-color: rgb(188, 188, 220);
+    padding: 8px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+td i:nth-child(2) {
+    background-color: rgb(232, 156, 156);
+    margin-left: 8px;
+}
